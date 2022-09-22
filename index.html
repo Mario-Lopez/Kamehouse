@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:url" content="https://mario-lopez.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mario López || Portafolio" />
+    <meta property="og:description"
+        content="Hi! My name is Mario López and I am a student in the Information Technology Engineering career." />
+    <meta property="og:image" content="	https://mario-lopez.github.io/img/previsualizacion.png" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamehouse - Venta de figuras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="icon" href="img/LogoMario.ico">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0" nonce="kG57MRkC"></script>
+</head>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<body>
+    <div class="content-menu-movil" id="contentmenuMovil" onclick="cerrarMenu()">
+        <div class="menu-movil" id="menuMovil">
+            <div class="menu-movil-logo">
+                <img src="./img/logo.png">
+            </div>
+            <main class="menu-movil-items">
+                <a href="#" class="menu-movil-item">Inicio</a>
+                <a href="#aboutMe" class="menu-movil-item">Sobre Kamehouse</a>
+                <a href="#experience" class="menu-movil-item">Figuras</a>
+                <a href="#portfolio" class="menu-movil-item">Contactos</a>
+                <!-- <a href="../" class="menu-movil-item">Extras</a> -->
+            </main>
+        </div>
+    </div>
+    <header class="content-menu" id="menu">
+        <div class="menu-logo">
+            <img src="./img/logo.png">
+        </div>
+        <div class="menu-nav">
+            <a href="#" class="menu-nav-item">Inicio</a>
+            <a href="#aboutMe" class="menu-nav-item">Sobre Kamehouse</a>
+            <a href="#experience" class="menu-nav-item">Figuras</a>
+            <a href="#portfolio" class="menu-nav-item">Contactos</a>
+            <!-- <a href="../" class="menu-nav-item">Extras</a> -->
+        </div>
+        <div class="menu-actions">
+            <a href=""><i class='bx bx-search-alt-2'></i></a>
+            <a href=""><i class='bx bx-cart'></i></a>
+            <a href=""><i class='bx bx-heart' ></i></a>
+        </div>
+        <button class="menu-nav-item-movil" onclick="abrirMenu()"><i class='bx bx-menu'></i></button>
+    </header>
+
+    <!-- BANNER PRINCIPAL -->
+    <div class="content-vh100">
+        <div class="fondo-inicio">
+            <div class="div-banner">
+                <div class="content-padding">
+                    <div class="banner">
+                        <section class="banner-info">
+                            <header><h5 class="titulosBigStatic">Venta de articulos de diferentes animes</h5></header>
+                            <main><p>¡Porque nosotros te apoyamos para buscar mercancía de tus animes favoritos!</p></main>
+                            <footer>
+                                <a href="https://www.youtube.com/c/KamehouseLagunaoficial" class="btnsStatic">¡Ver muchas figuras!</a>
+                            </footer>
+                        </section>
+                        <section class="banner-img">
+                            <img src="./img/card1.png" alt="">
+                            <img src="./img/card2.png" alt="">
+                        </section>
+                    </div>
+                </div>
+                <footer class="redes">
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-youtube' ></i></a>
+                    <a href=""><i class='bx bxl-whatsapp' ></i></a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- BANNER-BOTTOM -->
+    <div class="content-padding" id="banner-bottom">
+        <div class="div-banner-bottom">
+            <a href="https://www.facebook.com/KameHouseLagunaOFICIAL" target="_blank"><img src="./img/anuncio1.png" class="wow"></a>
+            <a href="https://www.facebook.com/KameHouseLagunaOFICIAL" target="_blank"><img src="./img/anuncio2.png" class="wow"></a>
+        </div>
+    </div>
+
+    <!-- FIGURAS -->
+    <div class="content-vh60">
+        <div class="content-padding">
+            <header class="header-titulo">
+                <h5 class="subtitulos">Lo más nuevo y original</h5>
+                <p>Porque sabemos lo que te gusta, variedad de figuras disponibles</p>
+            </header>
+            <div class="div-figuras">
+                <div class="figuras">
+
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-naruto.jpg" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Uzumaki Naruto - Naruto Shippuden</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-toga.jpg" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Rem - Re zero</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-deku.png" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Deku - Boku no hero</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-luffy.jpg" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Monkey D. Luffy - One Piece</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-saberAlter.jpg" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Saber Alter - Fate Stay Night</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-goku.jpg" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Son Goku - Dragon Ball</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-rem2.jpg" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Rem - Re zero</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+                    <section class="wow figura">
+                        <header class="figura-header">
+                            <img src="img/fig-yotsuba.jpg" alt="">
+                            <div class="figura-hover">
+                                <button>Ver</button>
+                                <!-- <img src="img/fig-rem.jpg" alt=""> -->
+                            </div>
+                        </header>
+                        <main class="figura-main">
+                            <h5>Nakano Yotsuba - The Quintessential Quintuplets</h5>
+                            <span><b>MXN $750</b></span>
+                        </main>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MARCAS -->
+    <div class="content-vh60">
+        <div class="content-padding">
+            <header class="header-titulo">
+                <h5 class="subtitulos">Marcas</h5>
+                <p>¡Mercancia de tus animes favoritos!</p>
+            </header>
+            <div class="div-marcas">
+                <div class="marcas">
+                    <div class="marca"><img src="./img/onepiece.png" alt="" class="wow imgCards"></div>
+                    <div class="marca"><img src="./img/dragonball.png" alt="" class="wow imgCards"></div>
+                    <div class="marca"><img src="./img/demonslayer.png" alt="" class="wow imgCards"></div>
+                    <div class="marca"><img src="./img/demonslayer.png" alt="" class="wow imgCards"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-vh40">
+        <div class="div-anuncio-fondo">
+            <div class="div-anuncio">
+                <div class="content-padding">
+                    <div class="anuncio">
+                        <div class="anuncio-info">
+                            <header>
+                                <h5 class="subtitulos">¡También contamos con un canal en Youtube!</h5>
+                            </header>
+                            <main>
+                                <p>Podrás encontrar diferente contenido en nuestro canal, como puede ser unboxins de figuras increíbles para que te des una idea.</p>
+                            </main>
+                            <footer>
+                                <a href="https://www.youtube.com/c/KamehouseLagunaoficial" class="btnsStatic"><i class='bx bxl-youtube'></i> ¡Unboxins en nuestro canal de Youtube!</a>
+                            </footer>
+                        </div>
+                        <div class="anuncio-video">
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/Ql1fV7AMps0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESEÑAS -->
+    <div class="content-vh60">
+        <div class="content-padding">
+            <header class="header-titulo">
+                <h5 class="subtitulos">¿Qué opina la gente?</h5>
+                <p>¡Porque queremos generar confianza, nuestra gente nos respalda!</p>
+            </header>
+            <div class="div-opiniones">
+                <div class="fb-post" data-href="https://www.facebook.com/maarianl/posts/pfbid02QpqEfMSUACWebLsRBZztfqnwtTfrqagYvAjVYe1dFQBBtWkzH6rZKrnnodg3dyikl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/maarianl/posts/2162500503902457" class="fb-xfbml-parse-ignore"><p>Excelente servicio! Calidad, atención, precios. Súper satisfecha con el servicio y productos, en todo momento hacen sentir segura tu compra 😍🎉👍🏼</p>Publicado por <a href="https://www.facebook.com/maarianl">Marián Ol</a> en&nbsp;<a href="https://www.facebook.com/maarianl/posts/2162500503902457">Lunes, 14 de febrero de 2022</a></blockquote></div>
+                <div class="fb-post" data-href="https://www.facebook.com/martin.garcia.501/posts/pfbid02aYaJhXP6QGTCiH3RTCNdukbzhxSJpFh1DoDFNiFJiE2VLruBtgtfA3i4VTyWkw77l" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/martin.garcia.501/posts/10160140832142899" class="fb-xfbml-parse-ignore"><p>Excelentes figuras al mejor precio, súper buen servicio y entregas al interior de la república 👍🏽</p>Publicado por <a href="https://www.facebook.com/martin.garcia.501">Martin Garcia Tinajero</a> en&nbsp;<a href="https://www.facebook.com/martin.garcia.501/posts/10160140832142899">Lunes, 25 de julio de 2022</a></blockquote></div>
+                <div class="fb-post" data-href="https://www.facebook.com/vaniaalejandra.avilatovar.50/posts/pfbid02cvwiiJdYeTTj1hVgP1C5qrpeCKSv6dCC2oU4DjZFBkoQsssNaeuaNYEX7VX4xJntl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/vaniaalejandra.avilatovar.50/posts/3172512599660614" class="fb-xfbml-parse-ignore"><p>Excelente calidad y servicio !!!
+                Los amé !! 😍
+                Muchísimas gracias !!</p>Publicado por <a href="https://www.facebook.com/vaniaalejandra.avilatovar.50">Vania Alejandra Avila Tovar</a> en&nbsp;<a href="https://www.facebook.com/vaniaalejandra.avilatovar.50/posts/3172512599660614">Jueves, 28 de abril de 2022</a></blockquote></div>
+                <div class="fb-post" data-href="https://www.facebook.com/stefaniejocelyne.chin/posts/pfbid0bNQmGkVeJKTku1SBpp1jG9NcQUQ5CJ41owERQsxDWLuzTts33sYqjYKfQHRdbMZLl" data-width="350" data-show-text="true"><blockquote cite="https://www.facebook.com/stefaniejocelyne.chin/posts/1347516085718697" class="fb-xfbml-parse-ignore"><p>📦El día de hoy llegó mi figura de Bakugou katsuki que orden y debo decir que tanto la atención como la calidad está al...</p>Publicado por <a href="https://www.facebook.com/stefaniejocelyne.chin">Stefanie Chin</a> en&nbsp;<a href="https://www.facebook.com/stefaniejocelyne.chin/posts/1347516085718697">Miércoles, 22 de diciembre de 2021</a></blockquote></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/menu.js"></script>
+</body>
+</html>
