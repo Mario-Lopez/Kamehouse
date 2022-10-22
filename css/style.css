@@ -35,8 +35,8 @@ body{
 }
 .content-padding{
     width: 100%;
-    max-width: 1340px;
-    padding: 40px 20px;
+    max-width: 1200px;
+    padding: 60px 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -54,11 +54,12 @@ body{
     color: #707070;
 }
 .titulosBigStatic{
-    font-size: 68px;
+    /* font-size: 68px; */
     font-weight: 700;
     margin-bottom: 20px;
     animation: fadeInDown;
     animation-duration: 1s;
+    font-size: calc(1.375rem + 1.5vw);
 }
 .titulosBigStatic b{
     color: #c42323;
@@ -83,8 +84,10 @@ body{
     border-radius: 4px;
     color: #fff;
     text-decoration: none;
+    transition: all 0.5s ease;
 }
 .btnsStatic:hover{
+    background: #000000;
     color: #fff;
 }
 
@@ -143,7 +146,7 @@ body{
     background: rgb(240, 240, 240);
 }
 
-/* MENU */
+/* MENU PC*/
 .content-menu{
     width: 100%;
     height: 120px;
@@ -156,6 +159,7 @@ body{
     z-index: 2;
     background-image: linear-gradient(to top, #ff000000, #08000054);
     transition: all 0.5s ease;
+    top: 0;
 }
 .content-menu .menu-logo img{
     z-index: 1;
@@ -192,6 +196,7 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-right: 20px;
 }
 .content-menu .menu-actions i{
     font-size: 22px;
@@ -244,22 +249,23 @@ body{
 }
 .div-banner .banner .banner-img img{
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 6px;
     animation: fadeInUp;
     animation-duration: 1s;
 }
 .div-banner .redes{
     position: absolute;
-    right: 0px;
+    left: 0px;
     bottom: 0;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     margin: 20px;
 }
 .div-banner .redes a{
     color: #fff;
-    font-size: 34px;
+    font-size: 22px;
 }
 /* -------------------------DIV-BANNER-BOTTOM-------------------------- */
 .div-banner-bottom{
@@ -285,14 +291,14 @@ body{
 }
 .figuras{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 20px;
     /* width: 100%; */
 }
 .div-figuras .figuras .figura{
-    box-shadow: rgb(0 0 0 / 4%) 2px 2px 8px 1px;
-    border: 1px solid rgb(239 239 239);
-    /* animation: 1s ease 0s 1 normal none running fadeInUp; */
+    /* box-shadow: rgb(0 0 0 / 4%) 2px 2px 8px 1px; */
+    /* border: 1px solid rgb(239 239 239); */
+    animation: 1s ease 0s 1 normal none running fadeInUp;
     transition: all 0.5s ease 0s;
     /* max-width: 260px; */
     border-radius: 6px;
@@ -329,6 +335,10 @@ body{
     opacity: 0;
     transition: all 0.5s ease;
 }
+.div-figuras .figuras .figura .figura-header .figura-hover a{
+    text-decoration: none;
+    color: #fff;
+}
 .div-figuras .figuras .figura .figura-header:hover > .figura-hover{
     opacity: 1;
 }
@@ -337,9 +347,10 @@ body{
     /* justify-content: flex-end; */
     align-items: center;
     flex-direction: column;
-    padding: 10px 0px;
+    padding: 10px 6px;
     border-bottom: 1px solid #f1f1f1;
     text-align: center;
+    font-size: 13px;
 }
 .div-figuras .figuras .figura .figura-main h5{
     font-size: 16px;
@@ -412,6 +423,51 @@ body{
     justify-content: center;
     height: fit-content;
 }
+/* -------DIV-FOOTER */
+.div-footer{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #b1b1b1;
+}
+.div-footer .footer{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    gap: 20px;
+    width: 100%;
+}
+.div-footer .footer .footer-img img{
+    width: 100%;
+    max-width: 140px;
+}
+.div-footer .footer .footer-info .actions{
+    display: flex;
+    margin-bottom: 10px;
+}
+.div-footer .footer .footer-info input{
+    width: 100%;
+    padding: 8px 6px;
+    font-size: 14px;
+}
+.div-footer .footer .footer-info .info{
+    display: flex;
+    gap: 40px;
+}
+.div-footer .footer .footer-info .info .info-rules{
+    padding: 0;
+    list-style: none;    
+}
+.div-footer .footer .footer-info .info .info-rules li a{
+    color: #fff;
+}
+.div-footer .footer .footer-info .info .info-pagos img{
+    width: 100%;
+    max-width: 400px;
+}
+.div-footer .second-footer{
+    text-align: center;
+    padding: 20px 0px;
+}
 @media screen and (max-width:768px) {
     .content-menu .menu-nav{
         display: none;
@@ -431,8 +487,23 @@ body{
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
     }
+    .div-marcas .marcas{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .div-anuncio .anuncio{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
     .div-opiniones{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .div-footer .footer{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .div-footer .footer .footer-info .info{
+        display: block;
     }
 }
