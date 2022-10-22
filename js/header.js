@@ -18,7 +18,7 @@ html1 += '</div>';
 
 html1 += '<header class="content-menu" id="menu">';
 html1 += '       <div class="menu-logo">';
-html1 += '           <img src="./img/logo.png">';
+html1 += '           <img src="../img/logo.png">';
 html1 += '       </div>';
 html1 += '       <div class="menu-nav">';
 html1 += '           <a href="#" class="menu-nav-item">Inicio</a>';
