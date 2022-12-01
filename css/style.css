@@ -6,8 +6,23 @@ body{
     position: relative;
     font-family: 'Spline Sans', sans-serif !important;
     font-weight: 400 !important;
+    background-image: url("../img/fondoimg.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0px;
 }
 /* ----------------------------------DISEÑOS GLOBALES------------------------------------- */
+.div-mensaje{
+    position: absolute;
+    background: #c42323;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px; */
+}
 .content-vh80{
     display: flex;
     justify-content: center;
@@ -47,7 +62,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 25px 0px;
-    align-items: center;
+    /* align-items: center; */
 }
 .header-titulo p{
     font-size: 16px;
@@ -149,7 +164,7 @@ body{
 /* MENU PC*/
 .content-menu{
     width: 100%;
-    height: 120px;
+    height: 80px;
     display: grid;
     gap: 20px;
     display: flex;
@@ -157,7 +172,8 @@ body{
     justify-content:space-around;
     position: fixed;
     z-index: 2;
-    background-image: linear-gradient(to top, #ff000000, #08000054);
+    /* background-image: linear-gradient(to top, #ff000000, #08000054); */
+    background: #000;
     transition: all 0.5s ease;
     top: 0;
 }
@@ -204,55 +220,18 @@ body{
 }
 
 /* ----------------------------------DIV-BANNER-------------------------- */
-.fondo-inicio{
-    width: 100%;
-    background-image: url(../img/banner.png);
-    /* background-position:center; */
-    background-size: cover;
-    min-height: 10vh;
-    background-attachment: fixed;
-    min-height: 80vh;
-}
 .div-banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     overflow: hidden;
-    background: rgb(0 0 0 / 67%);
-    gap: 10px;
-    background: linear-gradient(33deg, rgb(0 0 0 / 72%) 50%, rgb(203 32 32 / 76%) 50%);
-    min-height: 90vh;
-    color: #fff;
-    position: relative;
-}
-.div-banner .banner{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
     width: 100%;
+    position: relative;
+    /* min-height: 40vh; */
     margin-top: 80px;
 }
-.div-banner .banner .banner-info{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center; */
+.div-banner .sli{
+    margin-bottom: 0px !important;
 }
-.div-banner .banner .banner-img{
-    display: grid;
-    justify-content: center;
-    gap: 20px;
-}
-.div-banner .banner .banner-img img{
+.div-banner .sli img{
     width: 100%;
-    max-width: 350px;
-    border-radius: 6px;
-    animation: fadeInUp;
-    animation-duration: 1s;
 }
 .div-banner .redes{
     position: absolute;
@@ -261,7 +240,11 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
-    margin: 20px;
+    /* margin: 20px; */
+    padding: 10px;
+    background: #00000073;
+    width: 100%;
+    color: #fff;
 }
 .div-banner .redes a{
     color: #fff;
@@ -282,6 +265,7 @@ body{
     border-radius: 8px;
     animation: fadeInUp;
     animation-duration: 1s;
+    box-shadow: rgb(0 0 0 / 7%) 5px 6px 9px 10px;
 }
 
 /* ---------------------------DIV-FIGURAS------------------------------- */
@@ -297,12 +281,13 @@ body{
 }
 .div-figuras .figuras .figura{
     /* box-shadow: rgb(0 0 0 / 4%) 2px 2px 8px 1px; */
-    /* border: 1px solid rgb(239 239 239); */
+    border: 1px solid rgb(239 239 239);
     animation: 1s ease 0s 1 normal none running fadeInUp;
     transition: all 0.5s ease 0s;
     /* max-width: 260px; */
     border-radius: 6px;
     height: fit-content;
+    background: #fff;
 }
 .div-figuras .figuras .figura:hover{
     transform: translateY(-10px);
@@ -314,7 +299,7 @@ body{
     position: relative;
 } */
 .div-figuras .figuras .figura .figura-header{
-    max-height: 250px;
+    max-height: 170px;
     position: relative;
     overflow: hidden;
 }
@@ -322,6 +307,7 @@ body{
     width: 100%;
     object-fit: cover;
     object-position: top;
+    border-radius: 12px;
 }
 .div-figuras .figuras .figura .figura-header .figura-hover{
     position: absolute;
@@ -343,19 +329,36 @@ body{
     opacity: 1;
 }
 .div-figuras .figuras .figura .figura-main{
-    display: flex;
+    display: grid;
     /* justify-content: flex-end; */
     align-items: center;
-    flex-direction: column;
     padding: 10px 6px;
-    border-bottom: 1px solid #f1f1f1;
-    text-align: center;
+    /* border-bottom: 1px solid #f1f1f1; */
+    /* text-align: center; */
     font-size: 13px;
+    background: #f7f7f7;
 }
-.div-figuras .figuras .figura .figura-main h5{
-    font-size: 16px;
+.div-figuras .figuras .figura .figura-main .price{
+    font-size: 18px;
+    color: #000;
 }
-
+.div-figuras .figuras .figura .figura-main span{
+    font-size: 14px;
+    color: #878787;
+}
+.div-figuras .figuras .figura .figura-footer{
+    padding: 0px 6px;
+}
+.div-figuras .figuras .figura .figura-footer button{
+    display: flex;
+    align-items: flex-end;
+    background: #c42323;
+    color: #fff;
+    border: 1px solid red;
+    margin: 10px 0px;
+    padding: 4px;
+    border-radius: 2px;
+}
 /* -----DIV-MARCAS-------- */
 .div-marcas{
     display: grid;
@@ -475,9 +478,10 @@ body{
     .content-menu .menu-nav-item-movil{
         display: block;
     }
-    .div-banner .banner{
-        display: grid;
-        grid-template-columns: 100%;
+    .div-banner .sli img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
     }
     .div-banner-bottom{
         display: grid;
@@ -506,4 +510,86 @@ body{
     .div-footer .footer .footer-info .info{
         display: block;
     }
+}
+
+
+
+
+/* -------------------Figura.html----------------- */
+.header-categories{
+    margin: 60px 0px 10px 0px;
+    display: flex;
+    gap: 10px;
+}
+.header-categories span{
+    border: 1px solid #efefef;
+    background: #efefef;
+    padding: 4px 24px;
+    border-radius: 14px;
+    font-size: 12px;
+    color: #959595;
+}
+.div-detail-figura{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 6px;
+    box-shadow: 5px 5px 11px 1px #00000012;
+    gap: 10px;
+    padding: 20px;
+}
+.div-detail-figura .detail-figura-img img{
+    width: 100%;
+    max-width: 480px;
+    max-height: 485px;
+    object-fit: cover;
+    object-position: top;
+}
+.div-detail-figura .detail-figura-info{
+    position: relative;
+}
+.div-detail-figura .detail-figura-info main{
+    font-size: 14px;
+    color: #707070;
+}
+.div-detail-figura .detail-figura-info .info-item{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #000;
+    padding: 2px 0px;
+}
+.div-detail-figura .detail-figura-info footer{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+.div-detail-figura .detail-figura-info footer .btnComprar{
+    background: #c81717;
+    border: 1px solid #ffffff17;
+    padding: 12px 10px;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+.div-detail-figura .detail-figura-info footer .btnCarrito{
+    background: #ffffff;
+    border: 1px solid #d5d5d5;
+    padding: 12px 10px;
+    border-radius: 4px;
+    color: #787878;
+    text-decoration: none;
+    cursor: pointer;
+}
+.div-detail-figura .detail-figura-info .share-figura{
+    position: absolute;
+    bottom: 0;
+}
+.div-detail-figura .detail-figura-info .share-figura div{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    padding: 10px 0px;
 }

@@ -4,7 +4,7 @@ contentHeader.empty();
 var html1 = '<div class="content-menu-movil" id="contentmenuMovil" onclick="cerrarMenu()">';
 html1 += '  <div class="menu-movil" id="menuMovil">';
 html1 += '      <div class="menu-movil-logo">';
-html1 += '          <img src="../img/logo.png">';
+html1 += '          <img src="./img/logo.png">';
 html1 += '      </div>';
 html1 += '      <main class="menu-movil-items">';
 html1 += '          <a href="#" class="menu-movil-item">Inicio</a>';
@@ -18,7 +18,7 @@ html1 += '</div>';
 
 html1 += '<header class="content-menu" id="menu">';
 html1 += '       <div class="menu-logo">';
-html1 += '           <img src="../img/logo.png">';
+html1 += '           <a href="./"><img src="./img/logo.png"></a>';
 html1 += '       </div>';
 html1 += '       <div class="menu-nav">';
 html1 += '           <a href="#" class="menu-nav-item">Inicio</a>';
@@ -49,8 +49,10 @@ window.addEventListener('scroll',function()
     }
     else{
         //menu.style.background='#fff';
-        menu.style.background='linear-gradient(to top, #ff000000, #08000054)';
-        menu.style.height="120px";
+        // menu.style.background='linear-gradient(to top, #ff000000, #08000054)';
+        // menu.style.background="#00000085";
+        menu.style.background="#000";
+        menu.style.height="80px";
     }
 })
 
