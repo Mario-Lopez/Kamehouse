@@ -1,6 +1,5 @@
 
 function verFigura(){
-    http://127.0.0.1:5500/figura.html?idfigura=1
     var urlpagina = window.location.href;
     var sPaginaURL = window.location.search.substring(1);
     // console.log(sPaginaURL)
@@ -32,10 +31,14 @@ function verFigura(){
     html1 +=                        '<div class="info-item"><li>Marca: </li><li>'+ Figuras[Figura[1]].Marca +'</li></div>';
     html1 +=                        '<p>'+ Figuras[Figura[1]].Description +'</p>';
     html1 +=                    '</main>';
+    html1 +=                    '<h5 class="price-item">'+ Figuras[Figura[1]].Price +'</h5>';
     html1 +=                    '<footer>';
     html1 +=                        '<Button class="btnComprar">Comprar ahora</Button>';
-    html1 +=                        '<Button class="btnCarrito">Añadir al carrito</Button>';
+    html1 +=                        '<Button class="btnCarrito">Quiero apartarlo</Button>';
     html1 +=                    '</footer>';
+    html1 +=                    '<div class="div-anuncio-1item anuncios">';
+    html1 +=                        '<img src="./img/anuncioCompra.png">';
+    html1 +=                    '</div>';
     html1 +=                    '<div class="share-figura">';
     html1 +=                        '<span>¡Comparte!</span>';
     html1 +=                        '<div>';

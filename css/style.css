@@ -13,15 +13,22 @@ body{
     margin: 0px;
 }
 /* ----------------------------------DISEÑOS GLOBALES------------------------------------- */
+#contentHeader{
+    position: relative;
+    margin-bottom: 80px;
+}
 .div-mensaje{
-    position: absolute;
     background: #c42323;
     width: 100%;
-    z-index: 2;
-    top: 0;
     color: #fff;
     text-align: center;
-    /* padding: 10px; */
+    position: fixed;
+    z-index: 2;
+    font-size: 12px;
+    /* bottom: 0; */
+}
+.div-mensaje span{
+    padding: 6px;
 }
 .content-vh80{
     display: flex;
@@ -51,7 +58,7 @@ body{
 .content-padding{
     width: 100%;
     max-width: 1200px;
-    padding: 60px 20px;
+    padding: 40px 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,7 +69,7 @@ body{
     justify-content: center;
     flex-direction: column;
     padding: 25px 0px;
-    /* align-items: center; */
+    align-items: center;
 }
 .header-titulo p{
     font-size: 16px;
@@ -111,15 +118,31 @@ body{
     width: 100%;
 }
 
-/* -------IMG-CARDS------- */
-/* .imgCards{
+/* ------- ANUNCIOS-1ITEM ------- */
+.div-anuncio-1item{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
-    max-width: 300px;
-    border-radius: 12px;
+    margin-top: 20px;
+}
+/* ------- ANUNCIOS-2ITEM ------- */
+.div-anuncio-2item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.anuncios img{
+    width: 100%;
+    transition: all 0.5s ease;
+    border: 1px solid #f1f1f1;
+    border-radius: 8px;
     animation: fadeInUp;
     animation-duration: 1s;
-    transition: all 0.5s ease;
-} */
+    box-shadow: rgb(0 0 0 / 7%) 5px 6px 9px 10px;
+}
 
 /* MENU MOVIL */
 .content-menu-movil{
@@ -224,7 +247,6 @@ body{
     overflow: hidden;
     width: 100%;
     position: relative;
-    /* min-height: 40vh; */
     margin-top: 80px;
 }
 .div-banner .sli{
@@ -249,23 +271,6 @@ body{
 .div-banner .redes a{
     color: #fff;
     font-size: 22px;
-}
-/* -------------------------DIV-BANNER-BOTTOM-------------------------- */
-.div-banner-bottom{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-}
-.div-banner-bottom img{
-    width: 100%;
-    transition: all 0.5s ease;
-    border: 1px solid #f1f1f1;
-    border-radius: 8px;
-    animation: fadeInUp;
-    animation-duration: 1s;
-    box-shadow: rgb(0 0 0 / 7%) 5px 6px 9px 10px;
 }
 
 /* ---------------------------DIV-FIGURAS------------------------------- */
@@ -299,7 +304,7 @@ body{
     position: relative;
 } */
 .div-figuras .figuras .figura .figura-header{
-    max-height: 170px;
+    max-height: 180px;
     position: relative;
     overflow: hidden;
 }
@@ -324,6 +329,11 @@ body{
 .div-figuras .figuras .figura .figura-header .figura-hover a{
     text-decoration: none;
     color: #fff;
+    background: #c42323;
+    padding: 6px 10px;
+    width: 100%;
+    max-width: 80px;
+    text-align: center;
 }
 .div-figuras .figuras .figura .figura-header:hover > .figura-hover{
     opacity: 1;
@@ -336,15 +346,16 @@ body{
     /* border-bottom: 1px solid #f1f1f1; */
     /* text-align: center; */
     font-size: 13px;
-    background: #f7f7f7;
+    /* background: #f7f7f7; */
 }
 .div-figuras .figuras .figura .figura-main .price{
     font-size: 18px;
-    color: #000;
+    color: #2196f3;
+    font-weight: 400;
 }
 .div-figuras .figuras .figura .figura-main span{
     font-size: 14px;
-    color: #878787;
+    color: #000;
 }
 .div-figuras .figuras .figura .figura-footer{
     padding: 0px 6px;
@@ -360,43 +371,39 @@ body{
     border-radius: 2px;
 }
 /* -----DIV-MARCAS-------- */
-.div-marcas{
+/* animation: fadeInUp;
+animation-duration: 1s; */
+.div-mercancias{
     display: grid;
-    /* grid-template-columns: 30% 70%; */
+    grid-template-columns: 40% 60%;
     gap: 20px;
 }
-.div-marcas .marcas{
+.div-mercancias .mercancia-marcas{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    gap: 20px;
-    position: relative;
-    padding: 20px;
+    gap: 10px;
 }
-.div-marcas .marcas .marca{
-    overflow: hidden;
-}
-.div-marcas .marcas .marca img{
+.div-mercancias .mercancia-marcas img{
     width: 100%;
-    object-fit: cover;
-    max-height: 260px;
-    border-radius: 6px;
-    overflow: hidden;
-    transition: all 0.5s ease;
     animation: fadeInUp;
     animation-duration: 1s;
 }
-.div-marcas .marcas .marca:hover img {
-    transform: scale(1.1);
+.div-mercancias .mercancia-anuncios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.div-mercancias .mercancia-anuncios img{
+    width: 100%;
+    animation: fadeInUp;
+    animation-duration: 1s;
 }
 /* -----DIV-ABOUT------ */
 .div-anuncio-fondo{
-    background-image: url(../img/bannerAnuncio.jpg);
+    background-image: url(../img/banner.png);
     /* background-repeat: no-repeat; */
-    background-size: auto;
-    /* background-attachment: fixed; */
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
-    background-position: center;
 }
 .div-anuncio{
     display: flex;
@@ -483,7 +490,7 @@ body{
         height: 250px;
         object-fit: contain;
     }
-    .div-banner-bottom{
+    .div-anuncio-2item{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
@@ -491,9 +498,9 @@ body{
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
     }
-    .div-marcas .marcas{
+    .div-mercancias{
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: 100%;
     }
     .div-anuncio .anuncio{
         display: grid;
@@ -560,6 +567,9 @@ body{
     color: #000;
     padding: 2px 0px;
 }
+.div-detail-figura .detail-figura-info .price-item{
+    color: #2196f3;
+}
 .div-detail-figura .detail-figura-info footer{
     display: flex;
     gap: 20px;
@@ -568,20 +578,31 @@ body{
 .div-detail-figura .detail-figura-info footer .btnComprar{
     background: #c81717;
     border: 1px solid #ffffff17;
-    padding: 12px 10px;
+    padding: 8px 10px;
     border-radius: 4px;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+    font-size: 14px;
 }
 .div-detail-figura .detail-figura-info footer .btnCarrito{
     background: #ffffff;
     border: 1px solid #d5d5d5;
-    padding: 12px 10px;
+    padding: 8px 10px;
     border-radius: 4px;
     color: #787878;
     text-decoration: none;
     cursor: pointer;
+    font-size: 14px;
+}
+.div-detail-figura .detail-figura-info .imgs-anuncio{
+    display: flex;
+    gap: 10px;
+    padding: 20px 0px;
+}
+.div-detail-figura .detail-figura-info .imgs-anuncio img{
+    width: 100%;
+    max-width: 250px;
 }
 .div-detail-figura .detail-figura-info .share-figura{
     position: absolute;
@@ -592,4 +613,13 @@ body{
     gap: 10px;
     font-size: 18px;
     padding: 10px 0px;
+}
+.div-detail-figura .detail-figura-info .share-figura div a{
+    color: #ababab;
+}
+@media screen and (max-width:768px) {
+    .div-detail-figura{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
